@@ -1,6 +1,6 @@
 +++
 # default attributes for an incident.
-title = "{{ replace .TranslationBaseName "- NoSuchMethodError: The getter 'alwaysShowFrameScores' was called on null." | title }}"
+title = "{{ replace .TranslationBaseName "-" " " | NoSuchMethodError: The getter 'alwaysShowFrameScores' was called on null. }}"
 date = {{ .Date }}
 
 # severity: represents the impact of
