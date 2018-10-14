@@ -1,12 +1,12 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "Bowlr"
+title = "Bowlr Status"
 
 [permalinks]
   incidents = "/incidents/:year/:month/:day/:slug/"
 
 [params]
-  defaultLogo = "/images/primary.png"
+  defaultLogo = "/images/logo.png"
   faviconsPath = "/images/favicon/"
 
 # List of systems monitored in this status page.
