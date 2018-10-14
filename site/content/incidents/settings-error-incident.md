@@ -1,7 +1,7 @@
 +++
 # default attributes for an incident.
 title = "NoSuchMethodError: The getter 'alwaysShowFrameScores' was called on null."
-date = 2018-10-14T19:47:42.000Z
+date = 2018-10-13T17:30:00.000Z
 
 # severity: represents the impact of
 # your system due to the current incident.
@@ -17,14 +17,12 @@ severity = "degraded-performance"
 # by the incident.
 # Example:
 # affectedsystems = ["Android App", "iOS App", "Website"]
-affectedsystems = ["Android App", "iOS App"]
+affectedsystems = ["iOS App"]
 
 # resolved: marks an incident as resolved.
 # It can be either true or false.
 resolved = false
 +++
-The error has been noticed and will be resolved.
+A bug has been identified that presents the above mentioned error when a user tries to enter in scores in frame-by-frame mode. To work around this error, users can open up the app settings and toggle the "Always show frame scores" switch from off to on and the back to off.
 
-**Update**: We've identified the issue. {{< track "2018-10-14T20:00:00.000Z" >}}
-
-**Update 2**: We've identified the issue again. {{< track "2018-10-14T21:00:00.000Z" >}}
+**Update**: The issue has been identified and resolved in Android. The iOS fix has been submitted to Apple and is awaiting approval. {{< track "2018-10-13T18:00:00.000Z" >}}
