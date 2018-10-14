@@ -1,5 +1,6 @@
 +++
 # default attributes for an incident.
+#
 title = "{{ replace .TranslationBaseName "-" " " | title }}"
 date = {{ .Date }}
 
