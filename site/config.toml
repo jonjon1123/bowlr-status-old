@@ -1,12 +1,12 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "StatusKit"
+title = "Bowlr"
 
 [permalinks]
   incidents = "/incidents/:year/:month/:day/:slug/"
 
 [params]
-  defaultLogo = "https://www.netlify.com/img/press/logos/logomark.svg"
+  defaultLogo = "/images/primary.jpg"
   faviconsPath = "/images/favicon/"
 
 # List of systems monitored in this status page.
