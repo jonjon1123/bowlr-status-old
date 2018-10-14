@@ -1,8 +1,7 @@
 +++
 # default attributes for an incident.
-#
-title = "{{ replace .TranslationBaseName "-" " " | title }}"
-date = {{ .Date }}
+title = "NoSuchMethodError: The getter 'alwaysShowFrameScores' was called on null."
+date = 2018-10-14T19:47:42.000Z
 
 # severity: represents the impact of
 # your system due to the current incident.
@@ -24,3 +23,4 @@ affectedsystems = ["Android App", "iOS App"]
 # It can be either true or false.
 resolved = false
 +++
+The error has been noticed and will be resolved.
