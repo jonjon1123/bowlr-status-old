@@ -6,7 +6,7 @@ title = "Bowlr"
   incidents = "/incidents/:year/:month/:day/:slug/"
 
 [params]
-  defaultLogo = "/images/primary.jpg"
+  defaultLogo = "/images/primary.png"
   faviconsPath = "/images/favicon/"
 
 # List of systems monitored in this status page.
