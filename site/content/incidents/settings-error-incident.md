@@ -23,5 +23,5 @@ affectedsystems = ["Android App", "iOS App"]
 # It can be either true or false.
 resolved = false
 +++
-The error has been noticed and will be resolved.
+The error has been noticed and will be resolved.  
 **Update**: We've identified the issue. {{< track "2018-10-14T20:00:00.000Z" >}}
