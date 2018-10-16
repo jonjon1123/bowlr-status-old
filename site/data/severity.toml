@@ -4,6 +4,7 @@
   degraded-performance = "Degraded performance"
   partial-outage = "Partial outage"
   major-outage = "Major outage"
+  impacting-bug = "Impacting bug"
 
 [alerts]
   ok = "ok"
@@ -11,3 +12,4 @@
   degraded-performance = "warning"
   partial-outage = "warning"
   major-outage = "danger"
+  impacting-bug = "warning"
