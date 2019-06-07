@@ -23,8 +23,8 @@ const buildArgs = ["-d", "../dist"];
 gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("hugo-preview", (cb) => buildSite(cb, ["--buildDrafts", "--buildFuture"]));
 
-gulp.task("build", (cb) => ["css", "js", "hugo"]);
-gulp.task("build-preview", (cb) => ["css", "js", "hugo-preview"]);
+gulp.task("build", ["css", "js", "hugo"]);
+gulp.task("build-preview", ["css", "js", "hugo-preview"]);
 
 gulp.task("css", () => (
   gulp.src("./src/css/*.css")
@@ -47,7 +47,7 @@ gulp.task("js", (cb) => {
   });
 });
 
-gulp.task("server", () => {
+gulp.task("server", ["hugo", "css", "js"], () => {
   browserSync.init({
     server: {
       baseDir: "./dist"
