@@ -1,5 +1,5 @@
 [descriptions]
-  ok = "No issues"
+  ok = "Up and running"
   under-maintenance = "Under maintenance"
   degraded-performance = "Degraded performance"
   partial-outage = "Partial outage"
