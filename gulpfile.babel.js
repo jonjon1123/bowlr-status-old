@@ -23,8 +23,8 @@ const buildArgs = ["-d", "../dist"];
 gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("hugo-preview", (cb) => buildSite(cb, ["--buildDrafts", "--buildFuture"]));
 
-gulp.task("build", ["css", "js", "hugo"]);
-gulp.task("build-preview", ["css", "js", "hugo-preview"]);
+gulp.task("build", (cb) => ["css", "js", "hugo"]);
+gulp.task("build-preview", (cb) => ["css", "js", "hugo-preview"]);
 
 gulp.task("css", () => (
   gulp.src("./src/css/*.css")
@@ -47,7 +47,7 @@ gulp.task("js", (cb) => {
   });
 });
 
-gulp.task("server", ["hugo", "css", "js"], () => {
+gulp.task("server", () => {
   browserSync.init({
     server: {
       baseDir: "./dist"
@@ -160,15 +160,15 @@ gulp.task("new-incident", (cb) => {
 });
 
 function getPlatform(platform) {
-    switch (platform) {
-      case "win32":
-      case "win64": {
-        return "windows";
-      }
-      default: {
-        return platform
-      }
+  switch (platform) {
+    case "win32":
+    case "win64": {
+      return "windows";
     }
+    default: {
+      return platform;
+    }
+  }
 }
 
 function generateFrontMatter(frontMatter, answers) {
